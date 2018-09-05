@@ -3,11 +3,11 @@
   height: 100%
   margin 0
   padding 0
-  overflow hidden
+  overflow-x hidden
   font-family "Open Sans", "Arial", sans-serif
 
 html, body
-  overflow hidden
+  overflow-x hidden
   box-sizing border-box
 
 *,
@@ -31,8 +31,8 @@ html, body
 .wrapper-black
   display none
   position fixed
-  width 100%
-  height 100%
+  width 100vw
+  height 100vh
   top 0
   left 0
   background $wrapper-black
@@ -41,4 +41,4 @@ html, body
   display block
 
 .page--fixed
-  overflow-y hidden
+  overflow hidden
