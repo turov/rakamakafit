@@ -297,7 +297,7 @@ body {
   margin: 0;
   padding: 0;
   top: 174px;
-  left: 0;
+  left: 6%;
   display: none;
 }
 .nav__item {
@@ -316,7 +316,7 @@ body {
 .nav__title {
   position: absolute;
   top: 94px;
-  left: 0;
+  left: 6%;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
