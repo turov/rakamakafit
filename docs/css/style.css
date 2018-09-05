@@ -432,10 +432,9 @@ html {
   overflow: hidden;
 }
 .intro__img img {
-  width: 110%;
+  width: 100%;
   height: auto;
   position: relative;
-  left: -5%;
   bottom: -28px;
 }
 .intro__play {
