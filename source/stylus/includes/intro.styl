@@ -1,0 +1,80 @@
+.intro
+  padding 110px 0 0
+  background-color #000000
+  background linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4) 50%), $black url(../img/mb-bg@1x.png) no-repeat
+  background-position 71% 40%
+  background-size cover
+
+  @media screen and (min-resolution: 192dpi)
+    background linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4) 50%), $black url(../img/mb-bg@2x.png) no-repeat
+    background-position 71% 40%
+    background-size cover
+
+.intro__title
+  font-size 36px
+  line-height 44px
+  margin 0
+  color $white
+  font-weight 700
+  font-style italic
+  text-transform uppercase
+  letter-spacing -0.7px
+  padding 0 6%
+
+.intro__desc
+  color $white
+  font-size 15px
+  line-height 25px
+  font-weight 400
+  margin-bottom 23px
+  padding 0 6%
+
+.intro__btn
+  display block
+  color $white
+  text-decoration none
+  width: 218px;
+  height: 56px;
+  border: solid 1px $green;
+  text-align center
+  padding 16px 7px
+  font-size 13px
+  line-height 22px
+  text-transform uppercase
+  margin 0 6% 5px
+
+.intro__img
+  position relative
+  overflow hidden
+
+.intro__img img
+  width 110%
+  height auto
+  position relative
+  left -5%
+  bottom -28px
+
+.intro__play
+  position absolute
+  right 6%
+  bottom 60px
+  width 117px
+  height 117px
+  border-radius 50%
+  background $white
+  box-shadow 0 4px 30px 0 #ab004d80;
+
+.intro__play::before
+    position absolute
+    left 44%
+    top 39%
+    content ''
+    display inline-block
+    width 0
+    height 0
+    border-style solid
+    border-width 14px 0 14px 24.2px
+    border-color transparent transparent transparent $pink
+
+.play__tip
+  display none

@@ -1,0 +1,46 @@
+.personal-cabinet
+  padding 57px 0 0
+  background-color #000000
+  background linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6) 50%), $black url(../img/bg-photo@1x.png) no-repeat
+  background-position 51% 0
+  background-size cover
+
+  @media screen and (min-resolution: 192dpi)
+    background linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6) 50%), $black url(../img/bg-photo@2x.png) no-repeat
+    background-position 51% 0
+    background-size cover
+
+.personal-cabinet__list
+  list-style none
+  margin 0
+  padding 0 5% 0 6%
+  font-size 15px
+  line-height 25px
+  color $white
+  letter-spacing 0.1px
+  margin-bottom 37px
+
+.personal-cabinet__item
+  position relative
+  padding-left 18px
+
+.personal-cabinet__item::before
+  content ''
+  position absolute
+  top 10px
+  left 0
+  width 6px
+  height 6px
+  background $green
+  border-radius 50%
+
+.personal-cabinet__desc
+  margin 0
+  opacity 0.8
+  margin-bottom 31px
+
+.personal-cabinet__img
+  position relative
+  width 100%
+  height auto
+  margin-bottom -3px
