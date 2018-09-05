@@ -295,9 +295,9 @@ body {
   position: absolute;
   list-style: none;
   margin: 0;
-  padding: 0;
   top: 174px;
   left: 6%;
+  padding: 0 5%;
   display: none;
 }
 .nav__item {
@@ -336,7 +336,8 @@ body {
 .contacts {
   position: absolute;
   top: 75.5vh;
-  left: 0;
+  left: 6%;
+  padding: 0 5%;
   font-size: 16px;
   line-height: 20px;
   display: none;
