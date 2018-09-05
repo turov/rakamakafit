@@ -84,7 +84,7 @@
 
 
 .nav--opened .nav__list
-  transform translateX(0)
+  display block
 
 .nav__list
   position absolute
@@ -92,8 +92,6 @@
   margin 0
   padding 0
   top 174px
-  transition transform  0.3s ease
-  transform translateX(-1000px)
 
 .nav__item
   margin-bottom 10px
@@ -107,7 +105,7 @@
   text-transform uppercase
 
 .nav--opened .nav__title
-  transform translateX(0)
+  display block
 
 .nav__title
   position absolute
@@ -119,23 +117,20 @@
   color white
   margin 0
   padding 0 5%
-  transition transform  0.3s ease
-  transform translateX(-1000px)
 
   @media screen and (min-width: 375px)
     font-size 16px
 
 
 .nav--opened .contacts
-  transform translateX(0)
+  display block
 
 .contacts
   position absolute
   top 75.5vh
   font-size 16px
   line-height 20px
-  transition transform 0.3s ease
-  transform translateX(-1000px)
+  display none
 
   @media screen and (min-width: 375px)
     top 79.5vh

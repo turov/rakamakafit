@@ -285,8 +285,7 @@ html {
   left: -3px;
 }
 .nav--opened .nav__list {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  display: block;
 }
 .nav__list {
   position: absolute;
@@ -294,11 +293,6 @@ html {
   margin: 0;
   padding: 0;
   top: 174px;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translateX(-1000px);
-          transform: translateX(-1000px);
 }
 .nav__item {
   margin-bottom: 10px;
@@ -311,8 +305,7 @@ html {
   text-transform: uppercase;
 }
 .nav--opened .nav__title {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  display: block;
 }
 .nav__title {
   position: absolute;
@@ -324,11 +317,6 @@ html {
   color: #fff;
   margin: 0;
   padding: 0 5%;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translateX(-1000px);
-          transform: translateX(-1000px);
 }
 @media screen and (min-width: 375px) {
   .nav__title {
@@ -336,19 +324,14 @@ html {
   }
 }
 .nav--opened .contacts {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  display: block;
 }
 .contacts {
   position: absolute;
   top: 75.5vh;
   font-size: 16px;
   line-height: 20px;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transform: translateX(-1000px);
-          transform: translateX(-1000px);
+  display: none;
 }
 @media screen and (min-width: 375px) {
   .contacts {
@@ -995,6 +978,10 @@ html {
   background: rgba(228,19,119,0.3);
   border-radius: 50%;
   margin-right: 15px;
+}
+.slick-dots li button {
+  border: none;
+  background: transparent;
 }
 .slick-dots li:last-child {
   margin-right: 0;
