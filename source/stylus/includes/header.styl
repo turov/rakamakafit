@@ -13,9 +13,7 @@
 .nav
   position relative
   display flex
-  flex-direction row
-  justify-content space-between
-  align-items center
+  flex-direction column
   padding 26px 5%
 
   @media screen and (min-width: 1200px)
@@ -86,17 +84,12 @@
 .nav--opened .nav__list
   display block
 
-.nav--opened
-  overflow hidden
 
 .nav__list
-  position absolute
   list-style none
   margin 0
-  top 174px
-  left 6%
-  padding 0 5%
   display none
+  padding 0
 
 .nav__item
   margin-bottom 10px
@@ -113,16 +106,14 @@
   display block
 
 .nav__title
-  position absolute
-  top 94px
-  left 6%
   font-size 14px
   line-height 21px
   font-weight 600
   color white
   margin 0
-  padding 0 5%
   display none
+  margin-top 28px
+  margin-bottom 40px
 
   @media screen and (min-width: 375px)
     font-size 16px
@@ -132,16 +123,10 @@
   display block
 
 .contacts
-  position absolute
-  top 75.5vh
-  left 6%
-  padding 0 5%
   font-size 16px
   line-height 20px
   display none
-
-  @media screen and (min-width: 375px)
-    top 79.5vh
+  margin-top 40px
 
 .contacts__tel
   display block
