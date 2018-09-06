@@ -1,6 +1,11 @@
 .offers
   padding 33px 6% 27px
 
+  @media screen and (min-width: 1200px)
+    padding 80px 0 80px
+    width 1200px
+    margin 0 auto
+
 .offers__title
   margin 0
   text-transform uppercase
@@ -9,6 +14,11 @@
   font-weight 700
   font-style italic
   text-align center
+
+  @media screen and (min-width: 1200px)
+    font-size 36px
+    line-height 48px
+    margin-bottom 21px
 
 .offers__desc
   font-size 13px
@@ -20,10 +30,22 @@
   margin-top 17px
   margin-bottom 27px
 
+  @media screen and (min-width: 1200px)
+    font-size 18px
+    line-height 28px
+    width 568px
+    margin 0 auto
+    margin-bottom 108px
+
 .offers__list
   list-style none
   margin 0
   padding 0
+
+  @media screen and (min-width: 1200px)
+    display flex
+    flex-direction row
+    justify-content space-between
 
 .offers__item
   position relative
@@ -32,18 +54,44 @@
   padding-top 30px
   padding-bottom 33px
   margin-bottom 18px
+  box-shadow: 0px 19px 29px 4px rgba(189,189,189,0.2);
+
+  @media screen and (min-width: 1200px)
+    width 370px
+    border none
+    padding-top 215px
+    padding-bottom 36px
+    display flex
+    flex-direction column
+    align-items center
+    height 465px
+    margin-bottom 0
 
 .offers__item:nth-child(2)
   padding-top 13px
   padding-bottom 26px
 
+  @media screen and (min-width: 1200px)
+    padding-top 215px
+    padding-bottom 36px
+
 .offers__item:nth-child(3)
   padding-top 18px
   padding-bottom 26px
 
+  @media screen and (min-width: 1200px)
+    padding-top 215px
+    padding-bottom 36px
+
 .offer__img
   display block
   margin 0 auto
+
+  @media screen and (min-width: 1200px)
+    position absolute
+    top -50px
+    left 50%
+    transform translateX(-50%)
 
 .offer__title
   width 89%
@@ -53,13 +101,25 @@
   line-height 18px
   font-weight 700
 
+  @media screen and (min-width: 1200px)
+    font-size 18px
+    line-height 24px
+    width 300px
+    margin 0 auto
+
 .offers__item:nth-child(2) .offer__title
   margin-top 1px
   margin-bottom 10px
 
+  @media screen and (min-width: 1200px)
+    margin 0 auto
+
 .offers__item:nth-child(3) .offer__title
   margin-top 16px
   margin-bottom 12px
+
+  @media screen and (min-width: 1200px)
+    margin 0 auto
 
 .offer__price
   color $pink
@@ -71,10 +131,17 @@
   display block
   margin-bottom 20px
 
+  @media screen and (min-width: 1200px)
+    margin-bottom auto
+
 .offer__btn
-  width 185
+  width 185px
   margin-left auto
   margin-right auto
+
+  @media screen and (min-width: 1200px)
+    justify-self flex-end
+
 
 .offer__save-money
   position absolute

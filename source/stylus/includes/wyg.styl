@@ -15,9 +15,32 @@
   width 89%
   text-align center
 
+  @media screen and (min-width: 1200px)
+    font-size 24px
+    line-height 28px
+    width 658px
+    margin-bottom 88px
+
+.wyg__bg
+
+  @media screen and (min-width: 1200px)
+    background #000000
+
+.wyg__wrapper
+
+  @media screen and (min-width: 1200px)
+    display flex
+    width 1200px
+    margin 0 auto
+    padding 63px 0 0
+    height 516px
+
 .wyg__container
   background #000000
   padding 36px 6% 25px
+
+  @media screen and (min-width: 1200px)
+    padding 0
 
 .wyg__title-inner
   font-weight 700
@@ -26,6 +49,12 @@
   color $pink
   margin-bottom 13px
 
+  @media screen and (min-width: 1200px)
+    font-size 30px
+    line-height 41px
+    margin 0
+    margin-bottom 31px
+
 .wyg__desc
   font-size 15px
   line-height 25px
@@ -33,10 +62,20 @@
   margin-top 0
   margin-bottom 10px
 
+  @media screen and (min-width: 1200px)
+    width 634px
+    font-size 16px
+    line-height 26px
+    margin-bottom 26px
+
 .wyg__desc--icon
   position relative
   padding-left 40px
   margin-top 16px
+
+  @media screen and (min-width: 1200px)
+    width 550px
+    padding-left 60px
 
 .wyg__desc--icon::before
   content ''
@@ -47,10 +86,20 @@
   height 26px
   background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='26' viewBox='0 0 29 26'%3E%3Cg fill='%23E1FA61' fill-rule='nonzero'%3E%3Cpath d='M14.5 6.5C5.994 6.5 0 4.678 0 4v3.333C0 8.681 1.566 9.746 4.654 10.5c2.648.646 6.144 1.001 9.846 1.001s7.198-.355 9.846-1C27.434 9.745 29 8.68 29 7.332V4c0 .726-6.3 2.5-14.5 2.5z'/%3E%3Cpath d='M24.632 1c-2.647-.645-6.143-1-9.845-1-3.702 0-7.198.355-9.846 1C2.991 1.477 1.717 2.09 1 2.748 3.116 3.88 6.75 5 14.787 5c8.02 0 11.717-1.138 13.816-2.252-.735-.697-2.061-1.282-3.97-1.747zM14.5 20.5C5.994 20.5 0 18.678 0 18v3.333c0 1.348 1.566 2.413 4.654 3.166 2.648.646 6.144 1.001 9.846 1.001s7.198-.355 9.846-1C27.434 23.745 29 22.68 29 21.332V18c0 .726-6.3 2.5-14.5 2.5z'/%3E%3Cpath d='M24.632 15c-2.647-.645-6.143-1-9.845-1-3.702 0-7.198.355-9.846 1-1.95.476-3.224 1.09-3.941 1.747C3.116 17.88 6.75 19 14.787 19c8.02 0 11.717-1.138 13.816-2.252-.735-.697-2.061-1.282-3.97-1.747z'/%3E%3C/g%3E%3C/svg%3E")
 
+  @media screen and (min-width: 1200px)
+    left 10px
+    margin-bottom 0
+
 .wyg__promo
   position relative
   background #000000
   margin-top -1px
+
+  @media screen and (min-width: 1200px)
+    background transparent
+    width 594px
+    flex-shrink 0
+    margin-top -126px
 
 .wyg__promo::before
   content 'FIT'
@@ -65,6 +114,10 @@
   top 145px
   transform translateX(-50%)
 
+  @media screen and (min-width: 1200px)
+    font-size 500px
+    top 280px
+
 .wyg__promo::after
   content ''
   position absolute
@@ -74,6 +127,9 @@
   bottom 0
   left 0
 
+  @media screen and (min-width: 1200px)
+    display none
+
 .wyg__image
   position relative
   z-index 1
@@ -81,6 +137,10 @@
   height: auto;
   left: 0;
   bottom: 0;
+
+  @media screen and (min-width: 1200px)
+    width 564px
+    height 595px
 
 .wyg__promo::after
   content ''

@@ -1,10 +1,26 @@
 .features
   padding 37px 6% 21px 13%
 
+  @media screen and (min-width: 1200px)
+    padding 0
+    padding-top 107px
+    padding-bottom 128px
+
 .features__list
   list-style none
   margin 0
   padding 0
+
+  @media screen and (min-width: 1200px)
+    width 1200px
+    margin 0 auto
+    display flex
+    justify-content space-between
+
+.features__item
+
+  @media screen and (min-width: 1200px)
+    width 342px
 
 .feature__title
   font-size 18px
@@ -14,6 +30,12 @@
   margin 0
   margin-bottom 15px
 
+  @media screen and (min-width: 1200px)
+    font-size 30px
+    line-height 41px
+    margin-bottom 27px
+    min-height 82px
+
 .feature__desc
   font-size 15px
   line-height 25px
@@ -22,3 +44,8 @@
   font-weight 400
   margin 0
   margin-bottom 35px
+
+  @media screen and (min-width: 1200px)
+    margin 0
+    font-size 18px
+    line-height 28px

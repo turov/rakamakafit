@@ -10,6 +10,18 @@
     background-position 51% 0
     background-size cover
 
+  @media screen and (min-width: 1200px)
+    padding-top 146px
+    padding-bottom 109px
+    background linear-gradient(to bottom,rgba(0,0,0,0.85),rgba(0,0,0,0.85) 50%), $black url(../img/pcbg.jpg) no-repeat 20% 20%
+
+.personal-cabinet__wrapper
+
+  @media screen and (min-width: 1200px)
+    width 1200px
+    margin 0 auto
+    position relative
+
 .personal-cabinet__list
   list-style none
   margin 0
@@ -20,9 +32,46 @@
   letter-spacing 0.1px
   margin-bottom 37px
 
+  @media screen and (min-width: 1200px)
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    width 100%
+    font-size 18px
+    line-height 28px
+    padding 0
+
 .personal-cabinet__item
   position relative
   padding-left 18px
+
+  @media screen and (min-width: 1200px)
+    width 33%
+    padding 0
+    z-index 2
+
+.personal-cabinet__item:nth-child(1)
+
+  @media screen and (min-width: 1200px)
+    order -4
+    margin-right 33%
+
+.personal-cabinet__item:nth-child(3)
+
+  @media screen and (min-width: 1200px)
+    order -3
+
+.personal-cabinet__item:nth-child(2)
+
+  @media screen and (min-width: 1200px)
+    order -2
+    margin-right 33%
+
+.personal-cabinet__item:nth-child(4)
+
+  @media screen and (min-width: 1200px)
+    order -1
+
 
 .personal-cabinet__item::before
   content ''
@@ -34,6 +83,9 @@
   background $green
   border-radius 50%
 
+  @media screen and (min-width: 1200px)
+    display none
+
 .personal-cabinet__desc
   margin 0
   opacity 0.8
@@ -44,3 +96,11 @@
   width 100%
   height auto
   margin-bottom -3px
+
+  @media screen and (min-width: 1200px)
+    width 528px
+    height 577px
+    position absolute
+    top: 50%
+    left 50%
+    transform translate(-50%, -50%)

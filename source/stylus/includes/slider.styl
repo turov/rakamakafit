@@ -123,10 +123,21 @@
   position relative
   margin-top 40px
 
+  @media screen and (min-width: 1200px)
+    width 417px
+    height 700px
+    flex-shrink 0
+    order -1
+    margin-top 0
+
 
 .slider-first .slick-list
-  height 300px
+  height auto
   width 100%
+
+
+  @media screen and (min-width: 1200px)
+    height 817px
 
 .slick-arrow
   font-size 0
@@ -155,11 +166,21 @@
   left 6%
   z-index 2
 
+  @media screen and (min-width: 1200px)
+    top auto
+    bottom 0
+    left 20%
+
 .slick-next
   position absolute
   transform translateX(0%)
   top 50%
   right 6%
+
+  @media screen and (min-width: 1200px)
+    top auto
+    bottom 0
+    right 20%
 
 .slider-first .slick-slide
   height 100%
@@ -170,11 +191,19 @@
   margin 0 auto
   padding-bottom 80px
 
+  @media screen and (min-width: 1200px)
+    width 1200px
+
 .bef
   position relative
   margin-bottom 22px
   display block
   padding-top 12px
+
+  @media screen and (min-width: 1200px)
+    width 556px
+    padding-top 22px
+    margin-bottom 29px
 
 .bef span
   display flex
@@ -193,11 +222,23 @@
   left 50%
   transform translateX(-50%)
 
+  @media screen and (min-width: 1200px)
+    font-size 14px
+    line-height 14px
+    width 83px
+    height 42px
+    border-radius 21px
+
 .aft
   position relative
   margin-bottom 22px
   display block
   padding-top 12px
+
+  @media screen and (min-width: 1200px)
+    width 556px
+    padding-top 22px
+    margin-bottom 19px
 
 .aft span
   display flex
@@ -215,6 +256,13 @@
   top 0
   left 50%
   transform translateX(-50%)
+
+  @media screen and (min-width: 1200px)
+    font-size 14px
+    line-height 14px
+    width 83px
+    height 42px
+    border-radius 21px
 
 .slick-dots
   margin 0
@@ -266,3 +314,12 @@
   display block
   margin-bottom 25px
   text-align center
+
+  @media screen and (min-width: 1200px)
+    font-size 18px
+
+.slide__container
+
+  @media screen and (min-width: 1200px)
+    display flex
+    justify-content space-between

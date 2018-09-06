@@ -7,8 +7,20 @@
   transform translateX(-50%)
   transition background 0.6s ease
 
+  @media screen and (min-width: 1200px)
+    background linear-gradient(180deg, #2b2b2b, #2b2b2b 55%, #000000 55%, #000000);
+
 .logo
   margin-left 7px
+
+  @media screen and (min-width: 1200px)
+    order -4
+
+.logo img
+
+  @media screen and (min-width: 1200px)
+    width 164px
+    height 48px
 
 .nav
   position relative
@@ -18,8 +30,12 @@
 
   @media screen and (min-width: 1200px)
     width 1200px
-    padding 40px 16px
+    padding 0
     margin 0 auto
+    flex-direction row
+    flex-wrap wrap
+    padding-top 19px
+    align-items center
 
 
 .nav__btn
@@ -91,13 +107,26 @@
   display none
   padding 0
 
+  @media screen and (min-width: 1200px)
+    display block
+    display flex
+    width 100%
+    padding-top 35px
+    padding-bottom 8px
+    align-items: center;
+    justify-content: center;
+
 .nav__item
   margin-bottom 10px
+
+  @media screen and (min-width: 1200px)
+    margin-left 15px
+    margin-right 15px
 
 
 .nav__link
   text-decoration none
-  font-size 20px
+  font-size 16px
   line-height 1.8
   color $white
   text-transform uppercase
@@ -118,6 +147,14 @@
   @media screen and (min-width: 375px)
     font-size 16px
 
+  @media screen and (min-width: 1200px)
+    display block
+    order -5
+    width 345px
+    margin 0
+    margin-right auto
+    font-size 16px
+
 
 .nav--opened .contacts
   display block
@@ -127,6 +164,19 @@
   line-height 20px
   display none
   margin-top 40px
+
+  @media screen and (min-width: 1200px)
+    display flex
+    align-items center
+    width 345px
+    order -3
+    margin 0
+    margin-left auto
+
+.contacts div
+
+  @media screen and (min-width: 1200px)
+    margin-right  24px
 
 .contacts__tel
   display block
@@ -140,6 +190,9 @@
   text-transform uppercase
   margin-bottom 27px
 
+  @media screen and (min-width: 1200px)
+    margin-bottom 0
+
 .btn--buy
   display block
   text-decoration none
@@ -152,3 +205,7 @@
   color $white
   background $pink
   text-align center
+
+  @media screen and (min-width: 1200px)
+    width 125px
+    flex-shrink 0
